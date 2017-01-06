@@ -11,16 +11,19 @@ class SmsMessage
     public function from($originator)
     {
         $this->setOriginator($originator);
+        return $this;
     }
 
     public function to($recipient)
     {
         $this->setRecipient($recipient);
+        return $this;
     }
 
     public function text($body)
     {
         $this->setBody($body);
+        return $this;
     }
 
     public function setOriginator($originator)
